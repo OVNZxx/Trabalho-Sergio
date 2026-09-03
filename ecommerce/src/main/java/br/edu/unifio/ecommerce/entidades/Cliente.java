@@ -17,13 +17,14 @@ import lombok.Setter;
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 @Entity
-@Table(name = "tb_categoria")
-public class Categoria {
+@Table(name = "tb_cliente")
+public class Cliente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Short id;
+    private Integer id;
 
     private String nome;
-    private String descricao;
+    private String email;
+    private String telefone;
 }
